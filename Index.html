@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+
+<div class="main-container">
+<div class="container">
+    <div class="img" >
+        <img id="image" src="./img/Blue umbrella.png" alt="">
+        <img id="image1" src="./img/loader_icon.svg" alt="" style="display: none;">
+        <p><img id="output" width="30px"/></p>
+    </div>
+    <div class="info">
+        <p style="font-size: 2rem;">Custom Umbrella</p>
+        <div class="btn">
+            <button class="btn-blue" onclick="blueImage()"></button>
+            <button class="btn-pink" onclick="pinkImage()"></button>
+            <button class="btn-yellow" onclick="yelloImage()"></button>
+        </div>
+        <p style="font-size: 18px; font-weight: bold; margin-bottom: 10px;">Customise your umberella</p>
+        <p style="font-size: 15px; margin-bottom: 10px; color: rgb(100, 99, 99);">Upload a logo for instant preview</p>
+        <p style="font-size: 11px; color: gray">.png and .jpg format only max size 5Mb</p>
+        <button class="Upload" onclick="uploadImage()"><img src="./img/upload_icon.svg" alt="" id="upload-img"><span id="upload-text">UPLOAD LOGO</span></button>
+        <input type="file" accept="image/*" onchange="loadFile(event)"  name="" id="imageUpload" style="display: none;">
+    </div>
+</div>
+</div>
+
+<script src="index.js"></script>
+
+
+</body>
